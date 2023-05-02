@@ -1,0 +1,48 @@
+body{
+  background-image: linear-gradient(purple, rgb(220, 124, 124));
+}
+.wrapper{
+  width:50%;
+  margin:auto;
+}
+input{
+  height:2rem;
+  width:100%;
+  margin:2rem 0;
+}
+input::placeholder{
+color:gray;
+font-style: italic;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width:100%;
+  
+}
+.box{
+  background-color: white;
+  margin:1rem;
+  display:flex;
+}
+img{
+  height:auto;
+  margin-top:2rem;
+  margin-left: 1rem;
+}
+.text{
+  margin-left:1rem;
+  text-align: center;
+}
+.text p{
+  color:grey;
+  margin-top: 4rem;
+}
+.text h5{
+  margin-top: -3rem;
+}
+@media(max-width:720px){
+  .container{
+    grid-template-columns: 1fr;
+  }
+}
